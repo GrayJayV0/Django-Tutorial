@@ -1,0 +1,41 @@
+.sidebar-nav {
+    width: 100%;
+    position: fixed;
+    top: 11%;
+    left: -5%;
+    text-align: center;
+}
+
+.title {
+    margin-left: 14%;
+    text-align: center;
+    list-style: none;
+    margin-top: 1%
+
+}
+
+button {
+  border-color: transparent;
+  background-color: transparent;
+  width: 100px;
+  height: 50px;
+  top: 50%;
+  margin-left: 40px;
+}
+
+button:hover {
+  background-color:rgb(62, 62, 62);
+}
+
+.row {
+  display:grid;
+  
+}
+
+.col-sm-2 {
+  /* margin-left: 50%; */
+  width: 100%;
+  background-color: rgb(57, 69, 62);
+  height: 150px;
+
+}

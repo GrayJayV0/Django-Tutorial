@@ -1,0 +1,19 @@
+
+{% extends "base_generic.html" %}
+<a href="{% url 'index' %}">Home</a>.
+{% block content %}
+<div class = 'title'>
+  <h1>Local Library Home</h1>
+  <p>
+    Welcome to LocalLibrary, a website developed by
+    <em>Me</em>!
+  </p>
+  <h2>The library has the following record counts:</h2>
+  <ul>
+    <ul><strong>Books:</strong> {{ num_books }}</ul>
+    <ul><strong>Copies:</strong> {{ num_instances }}</ul>
+    <ul><strong>Copies available:</strong> {{ num_instances_available }}</ul>
+    <ul><strong>Authors:</strong> {{ num_authors }}</ul>
+  </ul>
+</div>
+{% endblock %}
