@@ -14,6 +14,9 @@
     <ul><strong>Copies:</strong> {{ num_instances }}</ul>
     <ul><strong>Copies available:</strong> {{ num_instances_available }}</ul>
     <ul><strong>Authors:</strong> {{ num_authors }}</ul>
+    <p>
+      You have visited this page {{ num_visits }} time{{ num_visits|pluralize }}.
+    </p>
   </ul>
 </div>
 {% endblock %}

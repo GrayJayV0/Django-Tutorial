@@ -2,7 +2,7 @@
     width: 100%;
     position: fixed;
     top: 8.4%;
-    left: -5%;
+    left: -4.3%;
     text-align: center;
 }
 
@@ -35,4 +35,18 @@ button:hover {
   background-color: rgb(57, 69, 62);
   height: 150px;
 
+}
+
+.login-button {
+  margin: 15px;
+}
+
+
+.homepage {
+  width: 100%;
+  background-color: darkolivegreen;
+}
+
+.homepage:hover {
+  background-color:rgb(57, 69, 62);
 }

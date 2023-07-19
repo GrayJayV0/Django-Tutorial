@@ -1,0 +1,7 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+<button class = 'Homepage' href = "{% url 'index' %}">Homepage</button> 
+{% block content %}
+  <p>Logged out!</p>
+  <a href="{% url 'login'%}">Click here to login again.</a>
+{% endblock %}

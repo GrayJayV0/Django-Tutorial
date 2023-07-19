@@ -37,11 +37,14 @@ class Book(models.Model):
     """Model representing a book (but not a specific copy of a book)."""
     title = models.CharField(max_length=200)
 
+    # image = models.ImageField( upload_to=None ,default='https://www.press.uillinois.edu/books/images/no_cover.jpg', help_text='Optional: Add a title for your book')
+
     # Foreign Key used because book can only have one author, but authors can have multiple books
     # Author is a string rather than an object because it hasn't been declared yet in the file
     author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)
 
     summary = models.TextField(max_length=1000, help_text='Enter a brief description of the book')
+
     isbn = models.CharField('ISBN', max_length=13, unique=True,
                              help_text='13 Character <a href="https://www.isbn-international.org/content/what-isbn">ISBN number</a>')
 
